@@ -1,0 +1,20 @@
+name = "syscall2333"
+version = "1.0.0"
+description = "hey,this is just a test for syscall, ty dude"
+build-once = false
+install-once = false
+target-arch = ["x86_64"]
+
+[task-source]
+type = "build-from-source"
+source = "local"
+source-path = "user/apps/syscall2333"
+
+[build]
+build-command = "make install"
+
+[install]
+in-dragonos-path = "/bin"
+
+[clean]
+clean-command = "make clean"
