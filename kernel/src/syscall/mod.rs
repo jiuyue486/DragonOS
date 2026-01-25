@@ -142,6 +142,12 @@ impl Syscall {
                 Ok(0)
             }
 
+		2333 => {
+                    log::info!("syscall 2333 called");
+                    Ok(6666)
+                }
+
+
             _ => {
                 log::error!(
                     "Unsupported syscall ID: {} -> {}, args: {:?}",
