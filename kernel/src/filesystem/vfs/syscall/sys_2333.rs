@@ -22,4 +22,4 @@ impl Syscall for Sys2333Handle {
 }
 
 const SYS_2333: usize = 2333;
-syscall_table_macros::declare_syscall!(SYS_2333, Sys2333Handle);
+
